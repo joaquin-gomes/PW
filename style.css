@@ -1,2 +1,111 @@
 
 body{background-image: url(/img/fondo3.jpg);}
+.titulo {
+    border: 4px solid #e8a143; 
+    border-style: inset;
+  background-color: hsl(0, 0%, 100%); 
+  color: #000000; 
+  padding: 10px 20px; 
+  border-radius: 10px; 
+  text-align: center; 
+  font-size: 40px;
+  font-weight: bold;
+  text-transform: uppercase; 
+  letter-spacing: 1px; 
+  margin: 20px 0;
+  font:bolder;
+  font-family: serif;
+}
+.subtitulo{
+    border: 4px solid #e8a143; 
+    border-style: inset;
+    background-color: hsl(0, 0%, 100%); 
+    color: #000000; 
+    padding: 10px 20px; 
+    border-radius: 10px; 
+    text-align: center; 
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: uppercase; 
+    letter-spacing: 1px; 
+    margin: 20px 0;
+    font:bolder;
+    font-family: serif;
+    text-align: center
+    
+    
+}
+
+.sub{
+    border: 4px solid #e8a143; 
+    border-style: inset;
+background-color: hsl(0, 0%, 100%); 
+color: #000000; 
+padding: 5px 10px; 
+border-radius: 5px; 
+text-align: center; 
+font-size: 30px;
+font-weight: bold;
+text-transform: uppercase; 
+letter-spacing: 1px; 
+margin: 20px 20px;
+font:bolder;
+font-family: serif;
+text-align: center
+}
+
+.textos{
+    background-color: hsl(0, 0%, 100%);
+    border: 2px solid #edd489;
+    border-style: double;
+
+}
+
+.lupa{
+    height: 30px;
+    width: 30px;
+}
+
+#carouselExampleIndicators{
+    width: 50%;
+}
+.carusel{
+    display: flex;
+justify-content:center;
+align-items: center;    
+}
+
+.links{
+    border: 3px solid;
+    border-color:#edd489;
+
+}
+
+.fotos{
+    display: flex;
+    justify-content:center;
+    align-items: center
+}
+.navpills{
+    border: 4px solid #e8a143; 
+    border-style: inset;
+    background-color: hsl(0, 0%, 100%); 
+    color: #000000; 
+    padding: 5px 10px; 
+    border-radius: 5px; 
+    text-align: center; 
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: uppercase; 
+    letter-spacing: 1px; 
+    margin: 20px 0;
+    margin-right: 1250px;
+    size: 50%;
+}
+
+.frases{
+    font:bold;
+font-family: serif;
+    size: 20px;
+}
+

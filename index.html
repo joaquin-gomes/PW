@@ -5,96 +5,269 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Explorando Buenos Aires</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
-<body>
 
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-8"> 
+               
+            </div>
+            <div class="col-md-4"> 
+            </div>
+        </div>
+    </div>
+    
+    <nav class="navbar bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand">Explorando Buenos Aires</a>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit"><img class="lupa" src="/img/lupa.png" alt=""></button>
+          </form>
+        </div>
+      </nav>
     <header>
-        <h1>Explorando Buenos Aires</h1>
-        <h1>¿Porque Visitarla?</h1>
-        <h2>Descubri los motivos para conocer una de las ciudades más atractivas de Latinoamérica. Estos son algunos de ellos.</h2>
-        <nav>
-            <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Atracciones</a></li>
-                <li><a href="#">Gastronomía</a></li>
-                <li><a href="#">Consejos de Viaje</a></li>
-            </ul>
-        </nav>
+        <h1 class="titulo">Explorando Buenos Aires</h1>
+        <div class="navpills">
+            <div class="d-flex align-items-start">
+                <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">Inicio</button>
+                <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">Atracciones</button>
+                 <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">Gatronomia</button>
+                 <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">Consejos de viaje</button>
+             </div>
+             <div class="tab-content" id="v-pills-tabContent">
+               <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab" tabindex="0">...</div>
+                  <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab" tabindex="0">...</div>
+                  <div class="tab-pane fade" id="v-pills-disabled" role="tabpanel" aria-labelledby="v-pills-disabled-tab" tabindex="0">...</div>
+                  <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab" tabindex="0">...</div>
+                  <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab" tabindex="0">...</div>
+            </div>
+        </div>
+    </div>
+
+        <h1 class="subtitulo">¿Porque Visitarla?</h1>
+        <br>
+        <br>
+        <br>
+
+`
+        <div class="carusel">
+            <div id="carouselExampleIndicators" class="carousel slide">
+                <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/bsas2.jpg" class="d-block w-100" alt="..." id="ft1">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/bsas4.jpg" class="d-block w-100" alt="..." id="ft2">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/bsas3.webp" class="d-block w-100" alt="..." id="ft3">
+                </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+        <br>
+        <br>
+        <h2 class="sub">¡Descubri los motivos para conocer una de las ciudades más atractivas de Latinoamérica!<br>Estos son algunos de ellos.</h2>
+    <br>
+    <br>
+
+
+
+    
     </header>
+    <div class="links">
+    <div class="accordion accordion-flush" id="accordionFlushExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+              Vuelos y Pasajes
+            </button>
+          </h2>
+          <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body"><button type="button" class="btn"><a href="https://www.despegar.com.ar/vuelos/bue/vuelos-a-buenos+aires">Vuelos a Buenos Aires</a></button></div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+              Alojamiento y Hoteles
+            </button>
+          </h2>
+          <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body"><button type="button" class="btn"><a href="https://www.booking.com/city/ar/buenos-aires.es.html?aid=306396;label=ar-buenos-aires-FKT9QCtmJug_9HGXUX*a9wS553277285957:pl:ta:p11220:p2:ac:ap:neg:fi:tiaud-2008760567241:kwd-63347150:lp9041020:li:dec:dm:ppccp=UmFuZG9tSVYkc2RlIyh9YdnZzv7u3SiOco5fpqS0M1M;ws=&gad=1&gclid=CjwKCAjwvfmoBhAwEiwAG2tqzAPbBxURS-7_PC1mjrvJ8FS6IsByJ7EYqiXiYeSh6DcVYQrUqYguYRoCcXIQAvD_BwE">Hoteles en Buenos Aires</a></button></div>
+          </div>
+        </div>
+        
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+              Actividades y Atracciones
+            </button>
+          </h2>
+          <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body"><button type="button" class="btn"><a href="https://www.civitatis.com/ar/buenos-aires?aid=100&cmp=es_AR_Nonbrand&cmpint=_Destinos_BuenosAires_RSA&gclsrc=aw.ds&gclid=CjwKCAjwvfmoBhAwEiwAG2tqzMqrSKiNqT9I1SFsbSsisPbsorgh-_tf2i8jl_FXOXDGGWRPUQnU_xoCNk0QAvD_BwE">Atracciones en Buenos Aires</a></button></div>
+          </div>
+        </div>
+      </div>
+    </div>
+      <br>
+      <br>
+      <br>
 
     <main>
         <article>
-            <h2>Porque podrás bailar tango en su lugar de origen</h2>
-            <p>Nacido en el Río de la Plata en el siglo XIX, el tango es una fusión entre la cultura africana, las culturas locales de los gauchos y los pueblos originarios y el aporte de los inmigrantes europeos y de Medio Oriente. En la ciudad encontrarás numerosas tanguerías con orquestas y bailarines en vivo. ¿Lo mejor? Los lugares más reconocidos incluyen una cena con una especialidad de carnes argentinas o un menú internacional.</p>
+            <u><h2 class="frases">Porque podrás bailar tango en su lugar de origen</h2></u>
+            <br>
+
+            <p class="textos">Nacido en el Río de la Plata en el siglo XIX, el tango es una fusión entre la cultura africana, las culturas locales de los gauchos y los pueblos originarios y el aporte de los inmigrantes europeos y de Medio Oriente. En la ciudad encontrarás numerosas tanguerías con orquestas y bailarines en vivo. ¿Lo mejor? Los lugares más reconocidos incluyen una cena con una especialidad de carnes argentinas o un menú internacional.</p>
+            <br>
+
             <img src="img/foto1.jpg" alt="Baile de Tango">
             <a href="#" class="leer-mas">Leer más</a>
         </article>
+        <br>
+        <br>
+        <br>
+        <br>
 
         <article>
-            <h2>Porque entenderás hasta dónde puede llegar la pasión por el fútbol</h2>
-            <p>En Buenos Aires se respira fútbol en todo momento: se siente en los estadios, se escucha en las confiterías de barrio y se observa en un abrazo de gol entre compañeros de un equipo de una liga aficionada. Además Buenos Aires es la sede de  la “experiencia deportiva más intensa del mundo”: el SuperClásico, el partido entre Boca y River, los dos equipos más importantes del país, en el que se vive lo más profundo de esta pasión.</p>
+           <u> <h2 class="frases">Porque entenderás hasta dónde puede llegar la pasión por el fútbol</h2></u>
+           <br>
+            <p class="textos">En Buenos Aires se respira fútbol en todo momento: se siente en los estadios, se escucha en las confiterías de barrio y se observa en un abrazo de gol entre compañeros de un equipo de una liga aficionada. Además Buenos Aires es la sede de  la “experiencia deportiva más intensa del mundo”: el SuperClásico, el partido entre Boca y River, los dos equipos más importantes del país, en el que se vive lo más profundo de esta pasión.</p>
+            <br>
             <img src="img/foto2.jpg" alt="Comida Argentina">
             <a href="#" class="leer-mas">Leer más</a>
         </article>
+        <br>
+        <br>
+        <br>
+        <br>
+
 
         <article>
-            <h2>Porque vas a celebrar y reír hasta (muy) tarde</h2>
-            <p>La noche es un elemento clave en la “ciudad que nunca duerme”. En sus bares y barras, cervecerías y discotecas, los jóvenes y adultos encuentran propuestas durante toda la semana para disfrutar hasta que salga nuevamente el sol. Sólo aquí podrás cenar en un restaurante después de medianoche o arrancar la movida a las tres de la madrugada. ¿Te vas a perder su noche eterna?</p>
+          <u>  <h2 class="frases">Porque vas a celebrar y reír hasta (muy) tarde</h2></u>
+          <br>
+            <p class="textos">La noche es un elemento clave en la “ciudad que nunca duerme”. En sus bares y barras, cervecerías y discotecas, los jóvenes y adultos encuentran propuestas durante toda la semana para disfrutar hasta que salga nuevamente el sol. Sólo aquí podrás cenar en un restaurante después de medianoche o arrancar la movida a las tres de la madrugada. ¿Te vas a perder su noche eterna?</p>
+            <br>
             <img src="img/foto3.jpg" alt="Barrios de Buenos Aires">
             <a href="#" class="leer-mas">Leer más</a>
         </article>
+        <br>
+        <br>
+        <br>
+        <br>
 
         <article>
-            <h2>Porque decimos hola, hello, bonjour, ciao y olá</h2>
-            <p>Buenos Aires es el fiel reflejo de quienes vinieron desde lejos para habitar “el nuevo mundo”. En la identidad visual porteña, se entremezclan influencias extranjeras que conforman un todo desigual y apasionante. Tenemos matices españoles, italianos, franceses, ingleses, rusos, japoneses, chinos, brasileños y peruanos, entre tantos otros. Lo descubrirás en su arquitectura, en su comida y en la manera de hablar y de ser de sus habitantes.</p>
+           <u> <h2 class="frases">Porque decimos hola, hello, bonjour, ciao y olá</h2> </u>
+           <br>
+            <p class="textos">Buenos Aires es el fiel reflejo de quienes vinieron desde lejos para habitar “el nuevo mundo”. En la identidad visual porteña, se entremezclan influencias extranjeras que conforman un todo desigual y apasionante. Tenemos matices españoles, italianos, franceses, ingleses, rusos, japoneses, chinos, brasileños y peruanos, entre tantos otros. Lo descubrirás en su arquitectura, en su comida y en la manera de hablar y de ser de sus habitantes.</p>
+            <br>
             <img src="img/foto4.jpg" alt="Barrios de Buenos Aires">
             <a href="#" class="leer-mas">Leer más</a>
         </article>
+        <br>
+        <br>
+        <br>
+        <br>
 
         <article>
-            <h2>Porque vas a comprar prendas de autor de verdadera calidad</h2>
-            <p>Marcas locales y diseñadores independientes convierten a Buenos Aires en el destino ideal para aquellos que buscan nuevas estéticas y prendas exclusivas. ¿La estrella del mercado? Curtiembres con productos artesanales de cuero auténtico. Tampoco te pierdas las ferias de antigüedades y artesanías, llenas de curiosidades e historias escondidas.</p>
+           <u> <h2 class="frases">Porque vas a comprar prendas de autor de verdadera calidad</h2> </u>
+           <br>
+            <p class="textos">Marcas locales y diseñadores independientes convierten a Buenos Aires en el destino ideal para aquellos que buscan nuevas estéticas y prendas exclusivas. ¿La estrella del mercado? Curtiembres con productos artesanales de cuero auténtico. Tampoco te pierdas las ferias de antigüedades y artesanías, llenas de curiosidades e historias escondidas.</p>
+            <br>
             <img src="img/foto5.jpg" alt="Barrios de Buenos Aires">
             <a href="#" class="leer-mas">Leer más</a>
         </article>
+        <br>
+        <br>
+        <br>
+        <br>
 
         <article>
-            <h2>Porque probarás todos los sabores del mundo en una sola ciudad</h2>
-            <p>La cocina porteña se basa en la esencia de los inmigrantes que poblaron Buenos Aires en el siglo XIX y enriquecieron el menú criollo con recetas de España, Italia, Alemania y la increíble cocina andina de los países limítrofes. Su calidad gastronómica está reconocida en el listado “Latin America’s 50 Best Restaurants 2016”, con ocho restaurantes porteños premiados. No te vayas sin probar un buen asado, la pizza porteña, las empanadas, el helado de dulce de leche, los alfajores, unos ricos churros y, por supuesto, el tradicional mate.</p>
+            <u><h2 class="frases">Porque probarás todos los sabores del mundo en una sola ciudad</h2></u>
+            <br>
+            <p class="textos">La cocina porteña se basa en la esencia de los inmigrantes que poblaron Buenos Aires en el siglo XIX y enriquecieron el menú criollo con recetas de España, Italia, Alemania y la increíble cocina andina de los países limítrofes. Su calidad gastronómica está reconocida en el listado “Latin America’s 50 Best Restaurants 2016”, con ocho restaurantes porteños premiados. No te vayas sin probar un buen asado, la pizza porteña, las empanadas, el helado de dulce de leche, los alfajores, unos ricos churros y, por supuesto, el tradicional mate.</p>
+            <br>
             <img src="img/foto6.jpg" alt="Barrios de Buenos Aires">
             <a href="#" class="leer-mas">Leer más</a>
         </article>
-        
+        <br>
+        <br>
+        <br>
+        <br>
+
         <article>
-            <h2>Porque conocerás en dónde vivió y creció el Papa Francisco</h2>
-            <p>El Papa del fin del mundo es argentino y su nombre secular es Jorge Mario Bergoglio. Nació y se crió en Flores, en Buenos Aires, y se desempeñó como Arzobispo de la provincia hasta el 13 de marzo de 2013, día en el que fue nombrado Papa. Conocé su casa, su jardín de infantes y escuela primaria y la plaza en donde jugaba con sus amigos. Por otro lado, también nos caracteriza la multiplicidad de templos: contamos con iglesias católicas, sinagogas, templos cristianos, mezquitas y centros budistas e hinduistas.</p>
+          <u> <h2 class="frases">Porque conocerás en dónde vivió y creció el Papa Francisco</h2> </u>
+          <br>
+            <p class="textos">El Papa del fin del mundo es argentino y su nombre secular es Jorge Mario Bergoglio. Nació y se crió en Flores, en Buenos Aires, y se desempeñó como Arzobispo de la provincia hasta el 13 de marzo de 2013, día en el que fue nombrado Papa. Conocé su casa, su jardín de infantes y escuela primaria y la plaza en donde jugaba con sus amigos. Por otro lado, también nos caracteriza la multiplicidad de templos: contamos con iglesias católicas, sinagogas, templos cristianos, mezquitas y centros budistas e hinduistas.</p>
+            <br>
             <img src="img/foto7.jpg" alt="Barrios de Buenos Aires">
             <a href="#" class="leer-mas">Leer más</a>
         </article>
-        
+        <br>
+        <br>
+        <br>
+        <br>
         <article>
-            <h2>Porque disfrutarás de su costado más cultural</h2>
-            <p>Son muchos los motivos que llevan a indicar que Buenos Aires es una ciudad empapada de cultura. Lo demuestran sus 380 librerías, sus 287 teatros y sus 160 museos. También colabora el Colón como uno de los cuatro teatros líricos más destacados del mundo, el fileteado porteño como Patrimonio Cultural Inmaterial de la Humanidad por la Unesco y la avenida Corrientes como testigo de la época de oro del tango. Ya sea una pared (visiten El regreso de Quinquela, con 2000 m²) o una servilleta, entendemos que cualquier excusa puede obrar de lienzo para manifestar un ataque de inspiración.</p>
+           <u> <h2 class="frases">Porque disfrutarás de su costado más cultural</h2> </u>
+           <br>
+            <p class="textos">Son muchos los motivos que llevan a indicar que Buenos Aires es una ciudad empapada de cultura. Lo demuestran sus 380 librerías, sus 287 teatros y sus 160 museos. También colabora el Colón como uno de los cuatro teatros líricos más destacados del mundo, el fileteado porteño como Patrimonio Cultural Inmaterial de la Humanidad por la Unesco y la avenida Corrientes como testigo de la época de oro del tango. Ya sea una pared (visiten El regreso de Quinquela, con 2000 m²) o una servilleta, entendemos que cualquier excusa puede obrar de lienzo para manifestar un ataque de inspiración.</p>
+           <br>
             <img src="img/foto8.jpg" alt="Barrios de Buenos Aires">
             <a href="#" class="leer-mas">Leer más</a>
         </article>
-
+        <br>
+        <br>
+        <br>
+        <br>
         <article>
-            <h2>Porque te rodeará el verde y el aire fresco</h2>
-            <p>Somos un destino urbano amigable con la naturaleza, ideal para transitar en bicicleta o a pie. Sus calles peatonales y el extendido sistema de ciclovías permiten recorrerla de modo sustentable. Tenemos más de 100 espacios verdes públicos; uno de ellos, la Reserva Ecológica, de 350 hectáreas, es punto de encuentro de miles de runners, turistas, jóvenes y especialistas en medio ambiente. Como se diría en criollo, para encerrarse bajo cuatro paredes, mejor quedarse en casa, ¿no? Salí, respirá el aire fresco y tomá cuantas imágenes te permita la memoria de tu cámara o celular.</p>
+          <u>  <h2 class="frases">Porque te rodeará el verde y el aire fresco</h2> </u>
+          <br>
+            <p class="textos">Somos un destino urbano amigable con la naturaleza, ideal para transitar en bicicleta o a pie. Sus calles peatonales y el extendido sistema de ciclovías permiten recorrerla de modo sustentable. Tenemos más de 100 espacios verdes públicos; uno de ellos, la Reserva Ecológica, de 350 hectáreas, es punto de encuentro de miles de runners, turistas, jóvenes y especialistas en medio ambiente. Como se diría en criollo, para encerrarse bajo cuatro paredes, mejor quedarse en casa, ¿no? Salí, respirá el aire fresco y tomá cuantas imágenes te permita la memoria de tu cámara o celular.</p>
+           <br>
             <img src="img/foto9.jpg" alt="Barrios de Buenos Aires">
             <a href="#" class="leer-mas">Leer más</a>
         </article>
-
+        <br>
+        <br>
+        <br>
+        <br>
         <article>
-            <h2>Porque volverás con muchísimos amigos</h2>
-            <p>La esencia de Buenos Aires está en su gente. No importa cuánto tiempo dure tu estadía, al final del viaje entenderás que el sabor del mate no está para nada mal pero que, en verdad, este representa un símbolo de afecto y camaradería; comprenderás que es tanto lo que disfrutamos conversar después de comer que hasta a eso le pusimos el nombre de “sobremesa”; y, por sobre todas las cosas, habrás descifrado que, aunque nos acusen de dar demasiados besos y abrazos, las personas no contamos con otra cualidad más genuina que la demostración de cariño.</p>
+           <u> <h2 class="frases">Porque volverás con muchísimos amigos</h2> </u>
+           <br>
+            <p class="textos">La esencia de Buenos Aires está en su gente. No importa cuánto tiempo dure tu estadía, al final del viaje entenderás que el sabor del mate no está para nada mal pero que, en verdad, este representa un símbolo de afecto y camaradería; comprenderás que es tanto lo que disfrutamos conversar después de comer que hasta a eso le pusimos el nombre de “sobremesa”; y, por sobre todas las cosas, habrás descifrado que, aunque nos acusen de dar demasiados besos y abrazos, las personas no contamos con otra cualidad más genuina que la demostración de cariño.</p>
+            <br>
             <img src="img/foto10.jpg" alt="Barrios de Buenos Aires">
             <a href="#" class="leer-mas">Leer más</a>
         </article>
 
         
     </main>
+<br>
+<br>
+<br>
+<br>
+<br>
 
     <footer>
         <p> Explorando Buenos Aires, 2023.</p>
@@ -102,3 +275,4 @@
     </footer>
 </body>
 </html>
+
