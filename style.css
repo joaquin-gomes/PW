@@ -8,7 +8,7 @@ body{background-image: url(/img/fondo3.jpg);}
   padding: 2vw 4vw; 
   border-radius: 2vw; 
   text-align: center; 
-  font-size: 7vw;
+  font-size: 6vw;
   font-weight: bold;
   text-transform: uppercase; 
   letter-spacing: 1px; 
@@ -58,6 +58,7 @@ text-align: center
     background-color: hsl(0, 0%, 100%);
     border: 2px solid #edd489;
     border-style: double;
+    font-size: 1.2vw;
 
 }
 
@@ -95,7 +96,7 @@ align-items: center;
 }
 .navpills{
     text-align: center; 
-    font-size: 2vw;
+    font-size: 1.5vw;
     font-weight: bold;
     text-transform: uppercase; 
     letter-spacing: 1px; 
