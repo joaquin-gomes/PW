@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atracciones en Buenos Aires</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script><meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<nav class="navbar bg-body-tertiary">
+    <div class="container-fluid">
+        <a class="navbar-brand">Explorando Buenos Aires</a>
+        <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Buscar" 
+aria-label="Search">
+            <button class="btn btn-outline-success" type="submit"><img class="lupa" src="/
+img/lupa.png" alt=""></button>
+        </form>
+    </div>
+</nav>
+<body>
+    <header>
+        <!-- Encabezado específico para la página de Atracciones -->
+        <h1 class="titulo">Atracciones en Buenos Aires</h1>
+        <!-- Agrega cualquier contenido específico para esta página en el encabezado -->
+    </header>
+
+    <div class="d-flex align-items-start">
+        <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" 
+    aria-orientation="vertical">
+    <div class="links"><a class="nav-link" href="index.html">INICIO</a></div>
+    <div class="links"><a class="nav-link" href="atracciones.html">ATRACCIONES</a></div>
+    <div class="links"><a class="nav-link" href="gastronomia.html">GASTRONOMIA</a></div>
+    <div class="links"><a class="nav-link" href="consejos.html">CONSEJOS DE VIAJE</a></div>
+        </div>
+        </div>
+      </div>
+
+    <div class="contenido-atracciones">
+        <div class="cuadro">
+        <h1 class="atit">Algunas de las atracciones más destacadas</h1>
+        <h2 class="subtit">Lugares impresindibles para visitar en Buenos Aires</h2>
+        <p class="subpar">Buenos Aires, la ciudad del tango, del asado, del fútbol… Pero también el centro de la sociedad argentina, llena de contrastes y emociones a flor de piel. ¡Hay tantas cosas que ver en Buenos Aires! Es una de las 20 ciudades más grandes del mundo, por lo que viajar a la capital de Argentina, también llamada “Baires”, no puede hacerse sin planificación.
+
+            Aquí te presentamos algunos lugares que ver en Buenos Aires, entre las que encontrarás desde visitas a museos hasta mercadillos, pasando por puntos históricos de la ciudad y zonas de moda. ¿Tenes ganas de preparar tu viaje a Buenos Aires? ¡Empezamos!</p>
+        </div>
+        
+        <body class="lista">
+            <div class="container">
+                <div class="content">
+                    <div class="text">
+                        <h2>1. Obelisco</h2>
+                        <br>
+                        <p>El Obelisco capta toda la atención en el centro de Buenos Aires. Es, quizás, el monumento más emblemático de la ciudad. Esta gran estructura de piedra rodeada de luces y pantallas eléctricas puede compararse con Times Square, en Nueva York. La columna propiamente dicha tiene un parecido con el Monumento de Washington.</p>
+                        <button id="showComments1" onclick="toggleComments(1)">Deja tu opinion</button>
+                        <div id="comments1" style="display: none;">
+                            <form id="commentForm1" onsubmit="submitComment(1); return false;">
+                                <textarea id="commentText1" rows="4" cols="50" placeholder="Escriba aqui"></textarea>
+                                <br>
+                                <button type="submit">Enviar</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="image">
+                        <img src="img/atracciones1.jpg" alt="Imagen de ejemplo">
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="container">
+                <div class="content">
+                    <div class="text">
+                        <h2>2. Palermo Soho</h2>
+                        <br>
+                        <p>Famoso por su lujo y su glamour, Palermo es también uno de los barrios más atractivos de Buenos Aires. Sus bellos edificios bordean las calles arboladas y callejones empedrados, y albergan boutiques, restaurantes y cafés.</p>
+                        <button id="showComments2" onclick="toggleComments(2)">Deja tu opinion</button>
+                        <div id="comments2" style="display: none;">
+                            <form id="commentForm2" onsubmit="submitComment(2); return false;">
+                                <textarea id="commentText2" rows="4" cols="50" placeholder="Escriba aqui"></textarea>
+                                <br>
+                                <button type="submit">Enviar</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="image">
+                        <img src="img/atracciones2.webp" alt="Imagen de ejemplo">
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="container">
+                <div class="content">
+                    <div class="text">
+                        <h2>3. Calle Florida </h2>
+                        <br>
+                        <p>Florida es la calle por excelencia para ir de compras en Buenos Aires. Se trata de una calle peatonal con un sinfín de distintos tipos de tiendas. Con frecuencia, los turistas visitan esta calle para comprar souvenirs. También encontrarás varias tiendas que venden productos de piel, vendedores ambulantes y artistas callejeros. Por lo general, puedes pagar en dólares y el tipo de cambio será más interesante que el oficial. Debido a la ubicación céntrica de la calle y a la gran variedad de tiendas, se ha convertido en uno de los destinos principales para aquellos que visitan Buenos Aires.</p>
+                        <button id="showComments3" onclick="toggleComments(3)">Deja tu 
+                            opinion</button>
+                             <div id="comments3" style="display: none;">
+                                 <form id="commentForm2" onsubmit="submitComment(3); return false;
+                            ">
+                                     <textarea id="commentText3" rows="4" cols="50" 
+                            placeholder="Escriba aqui"></textarea>
+                                     <br>
+                                     <button type="submit">Enviar</button>
+                                 </form>
+                             </div>
+                    </div>
+                    <div class="image">
+                        <img src="img/atracciones3.jpg" alt="Imagen de ejemplo">
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="container">
+                <div class="content">
+                    <div class="text">
+                        <h2>4. Teatro Colón</h2>
+                        <br>
+                        <p>El Teatro Colón es uno de los monumentos principales de Buenos Aires, y un teatro de ópera y ballet conocido en todo el mundo. También es la sede de la Orquesta Filarmónica de Buenos Aires y en el se celebran conciertos de música clásica. Inaugurado en 1908, con Aída de Giuseppe Verdi, el teatro ha, desde entonces, recibido a los artistas más famosos de ópera y ballet, incluidos Feodor Chaliapin, Igor Stravinsky y Luciano Pavarotti.</p>
+                        <button id="showComments4" onclick="toggleComments(4)">Deja tu 
+                            opinion</button>
+                             <div id="comments4" style="display: none;">
+                                 <form id="commentForm4" onsubmit="submitComment(4); return false;
+                            ">
+                                     <textarea id="commentText4" rows="4" cols="50" 
+                            placeholder="Escriba aqui"></textarea>
+                                     <br>
+                                     <button type="submit">Enviar</button>
+                                 </form>
+                             </div>
+                    </div>
+                    <div class="image">
+                        <img src="img/atracciones4.jpg" alt="Imagen de ejemplo">
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="container">
+                <div class="content">
+                    <div class="text">
+                        <h2>5. Cementerio de Recoleta</h2>
+                        <br>
+                        <p>La Recoleta es famosa por ser el sitio de descanso de las figuras más adineradas y reconocidas de Buenos Aires. Las calles pavimentadas de esta mini ciudad albergan mausoleos altísimos, estatuas y filas de tumbas. El cementerio, evocador y algo escalofriante, es una de las atracciones turísticas más visitadas de la ciudad. También es famoso por la variedad de su arquitectura, con ejemplos de estilo art decó, neogótico y barroco.</p>
+                        <button id="showComments5" onclick="toggleComments(5)">Deja tu 
+                            opinion</button>
+                             <div id="comments5" style="display: none;">
+                                 <form id="commentForm5" onsubmit="submitComment(5); return false;
+                            ">
+                                     <textarea id="commentText5" rows="4" cols="50" 
+                            placeholder="Escriba aqui"></textarea>
+                                     <br>
+                                     <button type="submit">Enviar</button>
+                                 </form>
+                             </div>
+                    </div>
+                    <div class="image">
+                        <img src="img/atracciones5.webp" alt="Imagen de ejemplo">
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="container">
+                <div class="content">
+                    <div class="text">
+                        <h2>6. Casa Rosada</h2>
+                        <br>
+                        <p>La fachada color rosada y la arquitectura de tipo palacio tan característica de la Casa Rosada hacen de este edificio uno de los más famosos y fotografiados de Argentina. El equivalente argentino de la Casa Blanca es sede de las oficinas presidenciales desde la década de 1860. Sigue los pasos de los presidentes argentinos y descubre la historia política del país.
+                        </p>
+                        <button id="showComments6" onclick="toggleComments(6)">Deja tu 
+                            opinion</button>
+                             <div id="comments6" style="display: none;">
+                                 <form id="commentForm2" onsubmit="submitComment(6); return false;
+                            ">
+                                     <textarea id="commentText6" rows="4" cols="50" 
+                            placeholder="Escriba aqui"></textarea>
+                                     <br>
+                                     <button type="submit">Enviar</button>
+                                 </form>
+                             </div>
+                    </div>
+                    <div class="image">
+                        <img src="img/atracciones6.webp" alt="Imagen de ejemplo">
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="container">
+                <div class="content">
+                    <div class="text">
+                        <h2>7. Plaza de Mayo</h2>
+                        <br>
+                        <p>Rodeada de monumentos históricos, y centro de manifestaciones políticas y celebraciones nacionales, la Plaza de Mayo refleja la interesante historia de Buenos Aires y Argentina. Fue diseñada por Juan de Garay en 1580, al ser fundada la ciudad. Hoy día, es considerada ampliamente la plaza más importante de Argentina.</p>
+                        <button id="showComments7" onclick="toggleComments(7)">Deja tu 
+                            opinion</button>
+                             <div id="comments7" style="display: none;">
+                                 <form id="commentForm7" onsubmit="submitComment(7); return false;
+                            ">
+                                     <textarea id="commentText7" rows="4" cols="50" 
+                            placeholder="Escriba aqui"></textarea>
+                                     <br>
+                                     <button type="submit">Enviar</button>
+                                 </form>
+                             </div>
+                    </div>
+                    <div class="image">
+                        <img src="img/atracciones7.jpg" alt="Imagen de ejemplo">
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="container">
+                <div class="content">
+                    <div class="text">
+                        <h2>8. Congreso Nacional Argentino</h2>
+                        <br>
+                        <p>El Congreso de la Nación Argentina es una parada obligada para los turistas que visitan Buenos Aires y tienen pasión por la arquitectura e interés por la historia política de Argentina.</p>
+                        <button id="showComments8" onclick="toggleComments(8)">Deja tu 
+                            opinion</button>
+                             <div id="comments8" style="display: none;">
+                                 <form id="commentForm8" onsubmit="submitComment(8); return false;
+                            ">
+                                     <textarea id="commentText8" rows="4" cols="50" 
+                            placeholder="Escriba aqui"></textarea>
+                                     <br>
+                                     <button type="submit">Enviar</button>
+                                 </form>
+                             </div>
+                    </div>
+                    <div class="image">
+                        <img src="img/atracciones8.jpg" alt="Imagen de ejemplo">
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="container">
+                <div class="content">
+                    <div class="text">
+                        <h2>9. Plaza San Martín</h2>
+                        <br>
+                        <p>La Plaza San Martín, en el centro de Buenos Aires, es un refugio tranquilo con una gran sección de pasto, árboles antiguos y amplios senderos. En uno de los extremos del parque, encontrarás edificios elegantes. La calle Florida, un centro de compras muy popular, comienza justo del otro lado. En la plaza, encontrarás un monumento de gran altura que data del siglo XIX. Se trata de la figura de un ex general militar y un memorial de las Islas Malvinas. Este es uno de los sitios más reconocibles de la ciudad.
+                        </p>
+                        <button id="showComments9" onclick="toggleComments(9)">Deja tu 
+                            opinion</button>
+                             <div id="comments9" style="display: none;">
+                                 <form id="commentForm9" onsubmit="submitComment(9); return false;
+                            ">
+                                     <textarea id="commentText9" rows="4" cols="50" 
+                            placeholder="Escriba aqui"></textarea>
+                                     <br>
+                                     <button type="submit">Enviar</button>
+                                 </form>
+                             </div>
+                    </div>
+                    <div class="image">
+                        <img src="img/atracciones9.jpg" alt="Imagen de ejemplo">
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+        </body>
+        
+
+    </div>
+
+    <footer>
+        <p> Explorando Buenos Aires, 2023.</p>
+        <p> Joaquín Gómes</p>
+    </footer>
+
+    <!-- Incluye enlaces a archivos JavaScript o bibliotecas si los necesitas -->
+
+</body>
+</html>
