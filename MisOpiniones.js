@@ -4,7 +4,7 @@ addEventListener('DOMContentLoaded', inicio);
             var consultas = JSON.parse(localStorage.getItem('misopiniones')) || [];
 
 
-    // Obtén la referencia del tbody
+    // Obtiene la referencia del tbody
             var tbody = document.getElementById('tabla-consultas');
 
     // Llena la tabla con los datos

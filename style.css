@@ -297,8 +297,8 @@ img {
 #reloj {
     font-family: Arial, sans-serif;
     font-size: 2vw;
-    color: #007BFF; /* Color del texto del reloj */
-    background-color: #fff; /* Fondo del reloj */
-    border: 2px solid #007BFF; /* Borde del reloj */
+    color: #007BFF; 
+    background-color: #fff;
+    border: 2px solid #007BFF; 
     border-radius: 10px;
     padding: 10px;}

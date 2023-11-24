@@ -1,5 +1,5 @@
 async function getEmail(place) {
-    const emailValidationRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;//Valida que el email sea valido, es una expresion regular
+    const emailValidationRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;//Valida que el email sea valido
   
     let isValidEmail = false;
   

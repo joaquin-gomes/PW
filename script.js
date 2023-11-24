@@ -32,13 +32,13 @@ addEventListener('DOMContentLoaded', inicio);
                 mail: m,
                 texto: c
             }
-            // Obtener el arreglo de datos existente en el localStorage (si existe)
+            // Obtiene el arreglo de datos existente en el localStorage (si existe)
             var arregloExistente = JSON.parse(localStorage.getItem('arregloDatos')) || [];
 
-            // Agregar el nuevo objeto al arreglo
+            // Agrega el nuevo objeto al arreglo
             arregloExistente.push(consulta);
 
-            // Guardar el arreglo actualizado en el localStorage
+            // Guarda el arreglo actualizado en el localStorage
             localStorage.setItem('arregloDatos', JSON.stringify(arregloExistente));
 
             document.getElementById('nombre').value= "";

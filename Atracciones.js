@@ -28,11 +28,11 @@ function submitComment(atraccionId) {
     const commentText = document.getElementById(`commentText${atraccionId}`).value;
 
  
-    // Obtener el arreglo de datos existente en el localStorage (si existe)
+    // Obtiene el arreglo de datos existente en el localStorage (si existe)
     var arregloExistente = JSON.parse(localStorage.getItem('misopiniones')) || [];
-    // Agregar el nuevo objeto al arreglo
+    // Agrega el nuevo objeto al arreglo
     arregloExistente.push(commentText);
-    // Guardar el arreglo actualizado en el localStorage
+    // Guarda el arreglo actualizado en el localStorage
     localStorage.setItem('misopiniones', JSON.stringify(arregloExistente));
     
     
