@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gastronomía en Buenos Aires</title>
     <link rel="stylesheet" href="style.css">  
-    <script src="script.js"></script>
+    <script src="Gastronomia.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
@@ -31,7 +31,7 @@
           <div class="links"><a class="nav-link" href="index.html">INICIO</a></div>
           <div class="links"><a class="nav-link" href="atracciones.html">ATRACCIONES</a></div>
           <div class="links"><a class="nav-link" href="gastronomia.html">GASTRONOMIA</a></div>
-          <div class="links"><a class="nav-link" href="consejos.html">CONSEJOS DE VIAJE</a></div>
+          
         </div>
       </div>
 
@@ -49,216 +49,212 @@
             <br>
 
             <ul class="restaurant-list">
+                <!-- Restaurante 1 - Palermo -->
                 <li class="restaurant">
                     <img class="restaurant-image" src="img/rest1.jpeg" alt="Restaurante 1">
                     <div class="restaurant-info">
-                        
-                       
                         <h2 class="restaurant-title">Palermo</h2>
                         <br>
-                        <p class="restaurant-description">El más viejo del libro: el barrio de Palermo tiene una oferta infinita de bares y restaurantes de primera clase, y algunos de los nombres más clásicos y conocidos por los porteños. Lo que hoy se llama Palermo Hollywood y Palermo Soho, delimitado por la Av.Juan B. Justo, Dorrego, Av.Santa Fe y Av.Córdoba, durante décadas estuvo reservado casi exclusivamente a residencias de familias de clase media y talleres de reparación de automóviles, pero con el tiempo se fue convirtiendo en uno de los barrios más divertidos y exclusivos de Buenos Aires.</p>
+                        <p class="restaurant-description">El más viejo del libro: el barrio de Palermo tiene una oferta infinita de bares y restaurantes de primera clase...</p>
                     </div>
                     <br>
                     <div class="restx">
-                    <div class="containerx">
-                        <h1 class="titulox">Algunos de los mejores de Palermo:</h1>
-                        <br>
-                        <br>
-                        <ul class="restaurant-listx">
-                            <li>
-                                Cabernet
-                                <button class="botonx">Reservar</button>
-                            </li>
-                            <li>
-                                Niño Gordo
-                                <button class="botonx">Reservar</button>
-                            </li>
-                            <li>
-                                El Preferido
-                                <button class="botonx">Reservar</button>
-                            </li>
-                            <li>
-                                Cucina Paradiso
-                                <button class="botonx">Reservar</button>
-                            </li>
-                            <li>
-                                La Mar
-                                <button class="botonx">Reservar</button>
-                            </li>
-                        </ul>
-                    </div>
+                        <div class="containerx">
+                            <h1 class="titulox">Algunos de los mejores de Palermo:</h1>
+                            <br>
+                            <br>
+                            <ul class="restaurant-listx">
+                                <li>
+                                    Cabernet
+                                    <button class="botonx" onclick="getEmail('Cabernet')">Reservar</button>
+                                </li>
+                                <li>
+                                    Niño Gordo
+                                    <button class="botonx" onclick="getEmail('Niño Gordo')">Reservar</button>
+                                </li>
+                                <li>
+                                    El Preferido
+                                    <button class="botonx" onclick="getEmail('El Preferido')">Reservar</button>
+                                </li>
+                                <li>
+                                    Cucina Paradiso
+                                    <button class="botonx" onclick="getEmail('Cucina Paradiso')">Reservar</button>
+                                </li>
+                                <li>
+                                    La Mar
+                                    <button class="botonx" onclick="getEmail('La Mar')">Reservar</button>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </li>
-                
-                
                 <hr class="page-divider">
-               
-               
+            
+                <!-- Restaurante 2 - Las Cañitas -->
                 <li class="restaurant">
-                    <img class="restaurant-image" src="img/rest2.jpg" alt="Restaurante 1">
+                    <img class="restaurant-image" src="img/rest2.jpg" alt="Restaurante 2">
                     <div class="restaurant-info">
-                        
-                       
                         <h2 class="restaurant-title">Las Cañitas</h2>
                         <br>
-                        <p class="restaurant-description">Ubicado entre los barrios de Palermo y Belgrano, el barrio de Las Cañitas desde siempre es conocido por su excelente propuesta gastronómica. En está zona supo nuclearse una serie de restaurantes de primer nivel que saciarán las necesidades de cualquiera que los elija. Como si fuera poco, el hecho de estar en una zona residencial lindera a las canchas de polo de Palermo le da un atractivo adicional. Este barrio está colmado de buena onda, buena música, lindos diseños y, sobre todo, buena comida.</p>
+                        <p class="restaurant-description">Ubicado entre los barrios de Palermo y Belgrano, el barrio de Las Cañitas desde siempre es conocido por su excelente propuesta gastronómica...</p>
                     </div>
                     <br>
                     <div class="restx">
-                    <div class="containerx">
-                        <h1 class="titulox">Alguno de los mejores de Las Cañitas:</h1>
-                        <br>
-                        <br>
-                        <ul class="restaurant-listx">
-                            <li>
-                                Sabino
-                                <button class="botonx">Reservar</button>
-                            </li>
-                            <li>
-                                La Colorada
-                                <button class="botonx">Reservar</button>
-                            </li>
-                            <li>
-                                Novecento
-                                <button class="botonx">Reservar</button>
-                            </li>
-                            <li>
-                                Kansas
-                                <button class="botonx">Reservar</button>
-                            </li>
-                            <li>
-                                Campo Bravo
-                                <button class="botonx">Reservar</button>
-                            </li>
-                        </ul>
-                    </div>
+                        <div class="containerx">
+                            <h1 class="titulox">Alguno de los mejores de Las Cañitas:</h1>
+                            <br>
+                            <br>
+                            <ul class="restaurant-listx">
+                                <li>
+                                    Sabino
+                                    <button class="botonx" onclick="getEmail('Sabino')">Reservar</button>
+                                </li>
+                                <li>
+                                    La Colorada
+                                    <button class="botonx" onclick="getEmail('La Colorada')">Reservar</button>
+                                </li>
+                                <li>
+                                    Novecento
+                                    <button class="botonx" onclick="getEmail('Novecento')">Reservar</button>
+                                </li>
+                                <li>
+                                    Kansas
+                                    <button class="botonx" onclick="getEmail('Kansas')">Reservar</button>
+                                </li>
+                                <li>
+                                    Campo Bravo
+                                    <button class="botonx" onclick="getEmail('Campo Bravo')">Reservar</button>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </li>
                 <hr class="page-divider">
+            
+                <!-- Restaurante 3 - Recoleta -->
                 <li class="restaurant">
-                    <img class="restaurant-image" src="img/rest3.jpg" alt="Restaurante 1">
+                    <img class="restaurant-image" src="img/rest3.jpg" alt="Restaurante 3">
                     <div class="restaurant-info">
-                        
-                       
                         <h2 class="restaurant-title">Recoleta</h2>
                         <br>
-                        <p class="restaurant-description">Una porción de París en Buenos Aires: el barrio de Recoleta no sólo ofrece una arquitectura al mejor estilo francés, sino que es la casa de una de las mejores propuestas gastronómicas de la ciudad, y lo fue desde sus inicios, es el primero y el más viejo de los polos. Su atractivo culinario sigue creciendo con el paso del tiempo y supo adaptarse a las tendencias del mercado, aunque aún se mantienen clásicos como La Biela.
-
-                        </p>
+                        <p class="restaurant-description">Una porción de París en Buenos Aires: el barrio de Recoleta no sólo ofrece una arquitectura al mejor estilo francés...</p>
                     </div>
                     <br>
                     <div class="restx">
-                    <div class="containerx">
-                        <h1 class="titulox">Algunos de los mejores de Recoleta:</h1>
-                        <br>
-                        <br>
-                        <ul class="restaurant-listx">
-                            <li>
-                                Alvear Grill
-                                <button class="botonx">Reservar</button>
-                            </li>
-                            <li>
-                                La Parolaccia
-                                <button class="botonx">Reservar</button>
-                            </li>
-                            <li>
-                                Paru
-                                <button class="botonx">Reservar</button>
-                            </li>
-                            <li>
-                                Dandy
-                                <button class="botonx">Reservar</button>
-                            </li>
-                            <li>
-                                The Food Truck Store
-                                <button class="botonx">Reservar</button>
-                            </li>
-                        </ul>
-                    </div>
+                        <div class="containerx">
+                            <h1 class="titulox">Algunos de los mejores de Recoleta:</h1>
+                            <br>
+                            <br>
+                            <ul class="restaurant-listx">
+                                <li>
+                                    Alvear Grill
+                                    <button class="botonx" onclick="getEmail('Alvear Grill')">Reservar</button>
+                                </li>
+                                <li>
+                                    La Parolaccia
+                                    <button class="botonx" onclick="getEmail('La Parolaccia')">Reservar</button>
+                                </li>
+                                <li>
+                                    Paru
+                                    <button class="botonx" onclick="getEmail('Paru')">Reservar</button>
+                                </li>
+                                <li>
+                                    Dandy
+                                    <button class="botonx" onclick="getEmail('Dandy')">Reservar</button>
+                                </li>
+                                <li>
+                                    The Food Truck Store
+                                    <button class="botonx" onclick="getEmail('The Food Truck Store')">Reservar</button>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </li>
-<hr class="page-divider">
-<li class="restaurant">
-    <img class="restaurant-image" src="img/rest4.jpg" alt="Restaur
-    <div class="restaurant-info">
-        
-       
-        <h2 class="restaurant-title">Puerto Madero</h2>
-        <br>
-        <p class="restaurant-description">Podría llamarse el barrio más lujoso de Buenos Aires: Puerto Madero. Los antiguos docks del puerto de Buenos Aires, creado en 1900 siguiendo el modelo inglés, supieron salir del abandono y del olvido para convertirse en un increíble centro residencial y gastronómico en la ciudad. Con hermosas vistas al río y opciones de toda clase, este barrio no tiene desperdicio para una tarde de almuerzo al sol o unos buenos tragos al atardecer.</p>
-    </div>
-    <br>
-    <div class="restx">
-    <div class="containerx">
-        <h1 class="titulox">Algunos de los mejores de Puerto Madero:</h1>
-        <br>
-        <br>
-        <ul class="restaurant-listx">
-            <li>
-                Trade Skybar
-                <button class="botonx">Reservar</button>
-            </li>
-            <li>
-                Faena
-                <button class="botonx">Reservar</button>
-            </li>
-            <li>
-                Chila
-                <button class="botonx">Reservar</button>
-            </li>
-            <li>
-                Happening
-                <button class="botonx">Reservar</button>
-            </li>
-            <li>
-                Osaka
-                <button class="botonx">Reservar</button>
-            </li>
-        </ul>
-    </div>
-    </div>
-</li>
-<hr class="page-divider">
-<li class="restaurant">
-    <img class="restaurant-image" src="img/rest5.jpg" alt="Restaur
-    <div class="restaurant-info">
-        
-       
-        <h2 class="restaurant-title">San Telmo</h2>
-        <br>
-        <p class="restaurant-description">El más clásico de los barrios porteños, y puede que el más antiguo, con aires tangueros y cultura bonaerense en cada esquina: San Telmo. Después de periodos de olvido y soledad, San Telmo recobró sus aires pintorescos y su antiguo esplendor, en sus calles se encuentran el refinamiento y la bohemia que perdió Palermo, junto a ese bouquet decadente que lo hace atractivo a los ojos de los turistas europeos. Actualmente hay unos 150 restaurantes, vale decir que la propuesta no deja nada que desear.</p>
-    </div>
-    <br>
-    <div class="restx">
-    <div class="containerx">
-        <h1 class="titulox">Algunos de los mejores de San Telmo:</h1>
-        <br>
-        <br>
-        <ul class="restaurant-listx">
-            <li>
-                Hierbabuena
-                <button class="botonx">Reservar</button>
-            </li>
-            <li>
-                Brasserie Petanque
-                <button class="botonx">Reservar</button>
-            </li>
-            <li>
-                Avelino
-                <button class="botonx">Reservar</button>
-            </li>
-            <li>
-                Amici Miei
-                <button class="botonx">Reservar</button>
-            </li>
-            <li>
-                Casal de Catalunya
-                <button class="botonx">Reservar</button>
-            </li>
-        </ul>
-    </div>
-    </div>
-</li>
+                <hr class="page-divider">
+            
+                <!-- Restaurante 4 - Puerto Madero -->
+                <li class="restaurant">
+                    <img class="restaurant-image" src="img/rest4.jpg" alt="Restaurante 4">
+                    <div class="restaurant-info">
+                        <h2 class="restaurant-title">Puerto Madero</h2>
+                        <br>
+                        <p class="restaurant-description">Podría llamarse el barrio más lujoso de Buenos Aires: Puerto Madero. Los antiguos docks del puerto de Buenos Aires, creado en 1900...</p>
+                    </div>
+                    <br>
+                    <div class="restx">
+                        <div class="containerx">
+                            <h1 class="titulox">Algunos de los mejores de Puerto Madero:</h1>
+                            <br>
+                            <br>
+                            <ul class="restaurant-listx">
+                                <li>
+                                    Trade Skybar
+                                    <button class="botonx" onclick="getEmail('Trade Skybar')">Reservar</button>
+                                </li>
+                                <li>
+                                    Faena
+                                    <button class="botonx" onclick="getEmail('Faena')">Reservar</button>
+                                </li>
+                                <li>
+                                    Chila
+                                    <button class="botonx" onclick="getEmail('Chila')">Reservar</button>
+                                </li>
+                                <li>
+                                    Happening
+                                    <button class="botonx" onclick="getEmail('Happening')">Reservar</button>
+                                </li>
+                                <li>
+                                    Osaka
+                                    <button class="botonx" onclick="getEmail('Osaka')">Reservar</button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <hr class="page-divider">
+            
+                <!-- Restaurante 5 - San Telmo -->
+                <li class="restaurant">
+                    <img class="restaurant-image" src="img/rest5.jpg" alt="Restaurante 5">
+                    <div class="restaurant-info">
+                        <h2 class="restaurant-title">San Telmo</h2>
+                        <br>
+                        <p class="restaurant-description">El más clásico de los barrios porteños, y puede que el más antiguo, con aires tangueros y cultura bonaerense en cada esquina...</p>
+                    </div>
+                    <br>
+                    <div class="restx">
+                        <div class="containerx">
+                            <h1 class="titulox">Algunos de los mejores de San Telmo:</h1>
+                            <br>
+                            <br>
+                            <ul class="restaurant-listx">
+                                <li>
+                                    Hierbabuena
+                                    <button class="botonx" onclick="getEmail('Hierbabuena')">Reservar</button>
+                                </li>
+                                <li>
+                                    Brasserie Petanque
+                                    <button class="botonx" onclick="getEmail('Brasserie Petanque')">Reservar</button>
+                                </li>
+                                <li>
+                                    Avelino
+                                    <button class="botonx" onclick="getEmail('Avelino')">Reservar</button>
+                                </li>
+                                <li>
+                                    Amici Miei
+                                    <button class="botonx" onclick="getEmail('Amici Miei')">Reservar</button>
+                                </li>
+                                <li>
+                                    Casal de Catalunya
+                                    <button class="botonx" onclick="getEmail('Casal de Catalunya')">Reservar</button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <hr class="page-divider">
+            </ul>
+            
                 <br>
                 <br>
                 <br>
@@ -272,5 +268,7 @@
         <p> Explorando Buenos Aires, 2023.</p>
         <p> Joaquin Gomes</p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="Gastronomia.js"></script>
 </body>
 </html>

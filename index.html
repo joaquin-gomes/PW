@@ -16,6 +16,36 @@
 </script>
 
 <body>
+   
+
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Dejanos tu Consulta</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <label>Nombre: </label><input type="text" id="nombre">
+        <hr>
+        <label>Email: </label><input type="text" id="mail">
+        <hr>
+        <textarea name="textarea" rows="10" cols="30" id="consulta">Escriba su Consulta</textarea>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-primary" id="enviar" data-bs-dismiss="modal">Enviar Consulta</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-8"> 
@@ -44,7 +74,12 @@
                   <div class="links"><a class="nav-link" href="index.html">INICIO</a></div>
                   <div class="links"><a class="nav-link" href="atracciones.html">ATRACCIONES</a></div>
                   <div class="links"><a class="nav-link" href="gastronomia.html">GASTRONOMIA</a></div>
-                  <div class="links"><a class="nav-link" href="consejos.html">CONSEJOS DE VIAJE</a></div>
+
+                  
+                  <div class="links"><button type="button" class="nav-link" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  Deje su Consulta Aqui
+                  </button></div>
+
              </div>
         </div>
     </div>
@@ -285,6 +320,30 @@
             </div>
         </article>
 
+        <div class="container mt-5">
+          <div class="row justify-content-center">
+            <div class="col-md-6">
+              <div class="card">
+                <div class="card-body">
+                  <h3 class="card-title text-center mb-4">Ingrese su usuario para ver las consultas</h3>
+                  
+                  <form>
+                    <div class="form-group">
+                      <input type="text" class="form-control" id="usuario" placeholder="Ingrese su usuario" required>
+                    </div>
+                    <br>
+                    <div class="form-group">
+                      <input type="password" class="form-control" id="contrasena" placeholder="Ingrese su contraseña" required>
+                    </div>
+                    <hr>
+                    <button type="button" class="btn btn-primary btn-block" id="ingresar">Ingresar</button>
+                  </form>
+      
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> 
         
     </main>
 <br>
